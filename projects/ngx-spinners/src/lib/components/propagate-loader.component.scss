@@ -1,0 +1,89 @@
+:host {
+  --oneRem: 1rem;
+  --threeRem: 3rem;
+  --fiveRem: 5rem;
+}
+
+@keyframes loading-0 {
+  25% {
+    transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
+  }
+  50% {
+    transform: translateX(calc(-1 * var(--threeRem))) scale(0.6)
+  }
+  75% {
+    transform: translateX(calc(-1 * var(--fiveRem))) scale(0.5)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}
+
+@keyframes loading-1 {
+  25% {
+    transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
+  }
+  50% {
+    transform: translateX(calc(-1 * var(--threeRem))) scale(0.6)
+  }
+  75% {
+    transform: translateX(calc(-1 * var(--threeRem))) scale(0.6)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}
+
+@keyframes loading-2 {
+  25% {
+    transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
+  }
+  75% {
+    transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}
+
+@keyframes loading-3 {
+  25% {
+    transform: translateX(var(--oneRem)) scale(0.75)
+  }
+  75% {
+    transform: translateX(var(--oneRem)) scale(0.75)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}
+
+@keyframes loading-4 {
+  25% {
+    transform: translateX(var(--oneRem)) scale(0.75)
+  }
+  50% {
+    transform: translateX(var(--threeRem)) scale(0.6)
+  }
+  75% {
+    transform: translateX(var(--threeRem)) scale(0.6)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}
+
+@keyframes loading-5 {
+  25% {
+    transform: translateX(var(--oneRem)) scale(0.75)
+  }
+  50% {
+    transform: translateX(var(--threeRem)) scale(0.6)
+  }
+  75% {
+    transform: translateX(var(--fiveRem)) scale(0.5)
+  }
+  95% {
+    transform: translateX(0rem) scale(1)
+  }
+}

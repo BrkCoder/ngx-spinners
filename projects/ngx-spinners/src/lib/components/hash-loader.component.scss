@@ -1,0 +1,52 @@
+:host {
+  --color: rgba(54, 215, 183, 0.75);
+  --thickness: 10px;
+  --size: 50px;
+  --lat: 20px;
+  --offset: 10px;
+}
+
+@keyframes loading-before {
+  0% {
+    width: var(--thickness);
+    box-shadow: var(--lat) calc(-1 * var(--offset)) var(--color),
+    calc(-1 * var(--lat)) var(--offset) var(--color);
+  }
+  35% {
+    width: var(--size);
+    box-shadow: 0 calc(-1 * var(--offset)) var(--color),
+    0 var(--offset) var(--color)
+  }
+  70% {
+    width: var(--thickness);
+    box-shadow: calc(-1 * var(--lat)) calc(-1 * var(--offset)) var(--color),
+    var(--lat) var(--offset) var(--color)
+  }
+  100% {
+    box-shadow: var(--lat) calc(-1 * var(--offset)) var(--color),
+    calc(-1 * var(--lat)) var(--offset) var(--color)
+  }
+}
+
+@keyframes loading-after {
+  0% {
+    height: var(--thickness);
+    box-shadow: var(--offset) var(--lat) var(--color),
+    calc(-1 * var(--offset)) calc(-1 * var(--lat)) var(--color)
+  }
+  35% {
+    height: var(--size);
+    box-shadow: var(--offset) 0 var(--color),
+    calc(-1 * var(--offset)) 0 var(--color)
+  }
+
+  70% {
+    height: var(--thickness);
+    box-shadow: var(--offset) calc(-1 * var(--lat)) var(--color),
+    calc(-1 * var(--offset)) var(--lat) var(--color)
+  }
+  100% {
+    box-shadow: var(--offset) var(--lat) var(--color),
+    calc(-1 * var(--offset)) calc(-1 * var(--lat)) var(--color)
+  }
+}

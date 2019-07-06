@@ -1,0 +1,32 @@
+:host {
+  --tx: calc(-4 * 25px);
+  --ty: calc((-1 * 25px) / 4);
+}
+
+@keyframes loading-ball {
+  75% {
+    opacity: 0.7
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty))
+  }
+
+}
+
+@keyframes loading-pacman-0 {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(-44deg)
+  }
+}
+
+@keyframes loading-pacman-1 {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(44deg)
+  }
+}

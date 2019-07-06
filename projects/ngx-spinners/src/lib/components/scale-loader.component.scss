@@ -1,0 +1,11 @@
+@keyframes loading {
+  0% {
+    transform: scaleY(1.0)
+  }
+  50% {
+    transform: scaleY(0.4)
+  }
+  100% {
+    transform: scaleY(1.0)
+  }
+}
