@@ -10,9 +10,8 @@ npm install ngx-spinners --save
 
 Add the declaration in your `app.module.ts` file:
 ```typescript
-import { TruncatePipe } from 'angular2-truncate';
-...
 import {NgxSpinnersModule} from 'ngx-spinners';
+...
 @NgModule({
   imports: [
     NgxSpinnersModule
