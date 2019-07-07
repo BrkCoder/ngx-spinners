@@ -1,5 +1,5 @@
 # Ngx Spinners
-![npm](https://img.shields.io/npm/v/ngx-spinners.svg)
+[![npm](https://img.shields.io/npm/v/ngx-spinners.svg)](https://www.npmjs.com/package/ngx-spinners)
 [![GitHub stars](https://img.shields.io/github/stars/BrkCoder/ngx-spinners.svg)](https://github.com/BrkCoder/ngx-spinners/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/BrkCoder/ngx-spinners.svg)](https://github.com/BrkCoder/ngx-spinners/issues)
 [![GitHub forks](https://img.shields.io/github/forks/BrkCoder/ngx-spinners.svg)](https://github.com/BrkCoder/ngx-spinners/network)
