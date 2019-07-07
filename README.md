@@ -29,7 +29,7 @@ Select the right loader for you and put it into your html
 <ngx-sync-loader></ngx-sync-loader>
 ```
 
-## StackBlitz Demo:
+## StackBlitz Demo
 You can play with a prepared sandbox example: 
 [demo](https://stackblitz.com/edit/ngx-spinners-example)
 ## Available Loaders
