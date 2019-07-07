@@ -58,3 +58,7 @@ CircleLoader            |    `<ngx-circle-loader></ngx-circle-loader> `         
 BounceLoader            |    `<ngx-bounce-loader></ngx-bounce-loader> `               |
 BeatLoader              |    `<ngx-beat-loader></ngx-beat-loader> `                   |
 BarLoader               |    `<ngx-bar-loader></ngx-bar-loader> `                     |
+
+### Changelog
+
+* [Ngx Spinners Changelog](https://github.com/BrkCoder/ngx-spinners/blob/master/CHANGELOG.md)
