@@ -1,6 +1,33 @@
 {
   "name": "ngx-spinners",
   "version": "1.0.0",
+  "description": "A collection of loading spinner components for angular",
+  "author": "Barak Inbal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrkCoder/ngx-spinners.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrkCoder/ngx-spinners/issues"
+  },
+  "homepage": "https://github.com/BrkCoder/ngx-spinners",
+  "contributors": [],
+  "keywords": [
+    "angular",
+    "angular-spinners",
+    "angular-spinner",
+    "ngx-spinners",
+    "ngx-spinner",
+    "loader",
+    "loaders",
+    "loading",
+    "spinner",
+    "spinners",
+    "halogen",
+    "progress",
+    "activity"
+  ],
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"
