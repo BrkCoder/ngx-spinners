@@ -61,4 +61,4 @@ BarLoader               |    `<ngx-bar-loader></ngx-bar-loader> `               
 
 ### Changelog
 
-* [Ngx Spinners Changelog](https://github.com/BrkCoder/ngx-spinners/blob/master/CHANGELOG.md)
+* [Library Changelog](https://github.com/BrkCoder/ngx-spinners/blob/master/CHANGELOG.md)
