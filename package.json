@@ -32,7 +32,7 @@
     "ng": "ng",
     "prestart": "yarn add file:./dist/ngx-spinners/ngx-spinners-1.0.0.tgz",
     "start": "ng serve --port 4500",
-    "build": "npm version 1.1.0 && ng build ngx-spinners && cd dist/ngx-spinners && npm pack ",
+    "build": "cd projects/ngx-spinners && npm version 1.1.0 && cd ../.. &&  ng build ngx-spinners && cd dist/ngx-spinners && npm pack ",
     "publish": "npm publish ./dist/ngx-spinners/ngx-spinners-1.1.0.tgz && git push --tags",
     "test": "ng test",
     "lint": "ng lint",
