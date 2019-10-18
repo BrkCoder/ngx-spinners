@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-clip-loader',
   templateUrl: './clip-loader.component.html',
-  styleUrls: ['./clip-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./clip-loader.component.scss']
 })
 export class ClipLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -25,7 +24,7 @@ export class ClipLoaderComponent {
       'border-color': `${this.color}`,
       'border-bottom-color': 'transparent',
       'display': 'inline-block',
-      'animation': ' loading 0.75s 0s infinite linear',
+      'animation': ' loading-clip 0.75s 0s infinite linear',
       'animation-fill-mode': 'both'
     };
   }

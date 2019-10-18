@@ -4,8 +4,7 @@ import {Dictionary} from '../dictionary';
 @Component({
   selector: 'ngx-fade-loader',
   templateUrl: './fade-loader.component.html',
-  styleUrls: ['./fade-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./fade-loader.component.scss']
 })
 export class FadeLoaderComponent implements OnInit {
   @Input() color = 'rgb(54, 215, 183)';
@@ -116,7 +115,7 @@ export class FadeLoaderComponent implements OnInit {
       'border-radius': `${`${this.radius}${this.radiusUnit}`}`,
       'transition': '2s',
       'animation-fill-mode': 'both',
-      'animation': `loading 1.2s ${index * 0.12}s infinite ease-in-out`
+      'animation': `loading-fade 1.2s ${index * 0.12}s infinite ease-in-out`
     };
   }
 

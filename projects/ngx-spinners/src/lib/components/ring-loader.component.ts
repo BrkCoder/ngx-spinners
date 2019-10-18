@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-ring-loader',
   templateUrl: './ring-loader.component.html',
-  styleUrls: ['./ring-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./ring-loader.component.scss']
 })
 export class RingLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -35,7 +34,7 @@ export class RingLoaderComponent {
       'border-radius': '100%',
       'animation-fill-mode': 'forwards',
       'perspective': '800px',
-      'animation': `${index === 1 ? 'loading-right' : 'loading-left'} 2s 0s infinite linear`
+      'animation': `${index === 1 ? 'loading-ring-right' : 'loading-ring-left'} 2s 0s infinite linear`
     };
   }
 }

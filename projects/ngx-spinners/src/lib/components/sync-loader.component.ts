@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-sync-loader',
   templateUrl: './sync-loader.component.html',
-  styleUrls: ['./sync-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./sync-loader.component.scss']
 })
 export class SyncLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -25,7 +24,7 @@ export class SyncLoaderComponent {
       'height': `${`${this.size}${this.sizeUnit}`}`,
       'margin': `${`${this.margin}${this.marginUnit}`}`,
       'border-radius': '100%',
-      'animation': `loading 0.6s ${index * 0.07}s infinite ease-in-out`,
+      'animation': `loading-sync 0.6s ${index * 0.07}s infinite ease-in-out`,
       'animation-fill-mode': 'both'
     };
   }

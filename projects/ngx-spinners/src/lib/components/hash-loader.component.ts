@@ -1,12 +1,11 @@
-import {Component, ElementRef, Input, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 import {calculateRgba} from '../helpers/helpers';
 
 @Component({
   selector: 'ngx-hash-loader',
   templateUrl: './hash-loader.component.html',
-  styleUrls: ['./hash-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./hash-loader.component.scss']
 })
 export class HashLoaderComponent {
   @Input() color = '#36d7b7';
@@ -38,7 +37,7 @@ export class HashLoaderComponent {
       'border-radius': `${`${this.size / 10}${this.sizeUnit}`}`,
       'transform': 'translate(-50%, -50%)',
       'animation-fill-mode': 'none',
-      'animation': `${index === 1 ? 'loading-before' : 'loading-after'} 2s infinite`
+      'animation': `${index === 1 ? 'loading-hash-before' : 'loading-hash-after'} 2s infinite`
     };
   }
 

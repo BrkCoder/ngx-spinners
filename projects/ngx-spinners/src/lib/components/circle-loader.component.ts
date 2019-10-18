@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-circle-loader',
   templateUrl: './circle-loader.component.html',
-  styleUrls: ['./circle-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./circle-loader.component.scss']
 })
 export class CircleLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -36,7 +35,7 @@ export class CircleLoaderComponent {
       'top': `${(index * 0.7 * 2.5)}%`,
       'left': `${(index * 0.35 * 2.5)}%`,
       'animation-fill-mode': '',
-      'animation': `loading 1s ${index * 0.2}s infinite linear`
+      'animation': `loading-circle 1s ${index * 0.2}s infinite linear`
     };
   }
 }

@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-grid-loader',
   templateUrl: './grid-loader.component.html',
-  styleUrls: ['./grid-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./grid-loader.component.scss']
 })
 export class GridLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -33,7 +32,7 @@ export class GridLoaderComponent {
       'margin': `${`${this.margin}${this.marginUnit}`}`,
       'border-radius': '100%',
       'animation-fill-mode': 'both',
-      'animation': `loading ${(rand / 100) + 0.6}s ${(rand / 100) - 0.2}s infinite ease`
+      'animation': `loading-grid ${(rand / 100) + 0.6}s ${(rand / 100) - 0.2}s infinite ease`
     };
   }
 

@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-bounce-loader',
   templateUrl: './bounce-loader.component.html',
-  styleUrls: ['./bounce-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./bounce-loader.component.scss']
 })
 export class BounceLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -34,7 +33,7 @@ export class BounceLoaderComponent {
       'top': '0',
       'left': '0',
       'animation-fill-mode': 'both',
-      'animation': `loading 2.1s ${index === 1 ? '1s' : '0s'} infinite ease-in-out`
+      'animation': `loading-bounce 2.1s ${index === 1 ? '1s' : '0s'} infinite ease-in-out`
     };
   }
 }

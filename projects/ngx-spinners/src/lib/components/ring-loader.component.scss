@@ -1,4 +1,4 @@
-@keyframes loading-right {
+@keyframes loading-ring-right {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes loading-left {
+@keyframes loading-ring-left {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
   }

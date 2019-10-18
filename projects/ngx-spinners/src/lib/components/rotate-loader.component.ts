@@ -22,7 +22,7 @@ export class RotateLoaderComponent {
       ...this.createBallStyle(),
       'position': 'relative',
       'animation-fill-mode': 'both',
-      'animation': 'loading 1s 0s infinite cubic-bezier(.7,-.13,.22,.86)'
+      'animation': 'loading-rotate 1s 0s infinite cubic-bezier(.7,-.13,.22,.86)'
     };
   }
 

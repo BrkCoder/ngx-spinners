@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-pulse-loader',
   templateUrl: './pulse-loader.component.html',
-  styleUrls: ['./pulse-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./pulse-loader.component.scss']
 })
 export class PulseLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -25,7 +24,7 @@ export class PulseLoaderComponent {
       'height': `${`${this.size}${this.sizeUnit}`}`,
       'margin': `${`${this.margin}${this.marginUnit}`}`,
       'border-radius': '100%',
-      'animation': `loading 0.75s ${index * 0.12}s infinite cubic-bezier(.2,.68,.18,1.08)`,
+      'animation': `loading-pulse 0.75s ${index * 0.12}s infinite cubic-bezier(.2,.68,.18,1.08)`,
       'animation-fill-mode': 'both'
     };
   }

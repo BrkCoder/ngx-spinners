@@ -24,7 +24,7 @@ export class RiseLoaderComponent {
       'width': `${`${this.size}${this.sizeUnit}`}`,
       'height': `${`${this.size}${this.sizeUnit}`}`,
       'margin': `${`${this.margin}${this.marginUnit}`}`,
-      'animation': `${index % 2 === 0 ? 'loading-even' : 'loading-odd'} 1s 0s infinite cubic-bezier(.15,.46,.9,.6)`,
+      'animation': `${index % 2 === 0 ? 'loading-rise-even' : 'loading-rise-odd'} 1s 0s infinite cubic-bezier(.15,.46,.9,.6)`,
       'animation-fill-mode': 'both'
     };
   }

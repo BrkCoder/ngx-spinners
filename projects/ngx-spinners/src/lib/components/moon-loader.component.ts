@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-moon-loader',
   templateUrl: './moon-loader.component.html',
-  styleUrls: ['./moon-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./moon-loader.component.scss']
 })
 export class MoonLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -20,7 +19,7 @@ export class MoonLoaderComponent {
       'position': 'relative',
       'width': `${`${this.size + ((this.size / 7) * 2)}${this.sizeUnit}`}`,
       'height': `${`${this.size + ((this.size / 7) * 2)}${this.sizeUnit}`}`,
-      'animation': 'loading 0.6s 0s infinite linear',
+      'animation': 'loading-moon 0.6s 0s infinite linear',
       'animation-fill-mode': 'forwards'
     };
   }
@@ -32,7 +31,7 @@ export class MoonLoaderComponent {
       'opacity': '0.8',
       'position': 'absolute',
       'top': `${`${(this.size / 2) - (this.size / 14)}${this.sizeUnit}`}`,
-      'animation': 'loading 0.6s 0s infinite linear',
+      'animation': 'loading-moon 0.6s 0s infinite linear',
       'animation-fill-mode': 'forwards'
     };
   }
@@ -49,7 +48,8 @@ export class MoonLoaderComponent {
     return {
       'width': `${`${size}${this.sizeUnit}`}`,
       'height': `${`${size}${this.sizeUnit}`}`,
-      'border-radius': '100%'
+      'border-radius': '100%',
+      'box-sizing': 'content-box'
     };
   }
 }

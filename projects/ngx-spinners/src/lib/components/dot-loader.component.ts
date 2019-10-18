@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-dot-loader',
   templateUrl: './dot-loader.component.html',
-  styleUrls: ['./dot-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./dot-loader.component.scss']
 })
 export class DotLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';

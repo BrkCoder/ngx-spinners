@@ -6,7 +6,7 @@
   --offset: 10px;
 }
 
-@keyframes loading-before {
+@keyframes loading-hash-before {
   0% {
     width: var(--thickness);
     box-shadow: var(--lat) calc(-1 * var(--offset)) var(--color),
@@ -28,7 +28,7 @@
   }
 }
 
-@keyframes loading-after {
+@keyframes loading-hash-after {
   0% {
     height: var(--thickness);
     box-shadow: var(--offset) var(--lat) var(--color),

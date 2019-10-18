@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-square-loader',
   templateUrl: './square-loader.component.html',
-  styleUrls: ['./square-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./square-loader.component.scss']
 })
 export class SquareLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -23,7 +22,7 @@ export class SquareLoaderComponent {
       'background-color': `${this.color}`,
       'width': `${`${this.size}${this.sizeUnit}`}`,
       'height': `${`${this.size}${this.sizeUnit}`}`,
-      'animation': 'loading 3s 0s infinite cubic-bezier(.09,.57,.49,.9)',
+      'animation': 'loading-square 3s 0s infinite cubic-bezier(.09,.57,.49,.9)',
       'animation-fill-mode': 'both'
     };
   }

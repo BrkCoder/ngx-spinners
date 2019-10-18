@@ -4,7 +4,7 @@
   --fiveRem: 5rem;
 }
 
-@keyframes loading-0 {
+@keyframes loading-propagate-0 {
   25% {
     transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes loading-1 {
+@keyframes loading-propagate-1 {
   25% {
     transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@keyframes loading-2 {
+@keyframes loading-propagate-2 {
   25% {
     transform: translateX(calc(-1 * var(--oneRem))) scale(0.75)
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@keyframes loading-3 {
+@keyframes loading-propagate-3 {
   25% {
     transform: translateX(var(--oneRem)) scale(0.75)
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@keyframes loading-4 {
+@keyframes loading-propagate-4 {
   25% {
     transform: translateX(var(--oneRem)) scale(0.75)
   }
@@ -73,7 +73,7 @@
   }
 }
 
-@keyframes loading-5 {
+@keyframes loading-propagate-5 {
   25% {
     transform: translateX(var(--oneRem)) scale(0.75)
   }

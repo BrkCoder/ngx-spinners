@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-beat-loader',
   templateUrl: './beat-loader.component.html',
-  styleUrls: ['./beat-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./beat-loader.component.scss']
 })
 export class BeatLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -25,7 +24,7 @@ export class BeatLoaderComponent {
       'height': `${`${this.size}${this.sizeUnit}`}`,
       'margin': `${`${this.margin}${this.marginUnit}`}`,
       'border-radius': '100%',
-      'animation': `loading 0.7s ${index % 2 ? '0s' : '0.35s'} infinite linear`,
+      'animation': `loading-beat 0.7s ${index % 2 ? '0s' : '0.35s'} infinite linear`,
       'animation-fill-mode': 'both'
     };
   }

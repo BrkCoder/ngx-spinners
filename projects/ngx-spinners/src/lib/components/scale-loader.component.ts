@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-scale-loader',
   templateUrl: './scale-loader.component.html',
-  styleUrls: ['./scale-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./scale-loader.component.scss']
 })
 export class ScaleLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -28,7 +27,7 @@ export class ScaleLoaderComponent {
       'height': `${`${this.height}${this.heightUnit}`}`,
       'margin': `${`${this.margin}${this.marginUnit}`}`,
       'border-radius': `${`${this.radius}${this.radiusUnit}`}`,
-      'animation': `loading 1s ${index * 0.1}s infinite cubic-bezier(.2,.68,.18,1.08)`,
+      'animation': `loading-scale 1s ${index * 0.1}s infinite cubic-bezier(.2,.68,.18,1.08)`,
       'animation-fill-mode': 'both'
     };
   }

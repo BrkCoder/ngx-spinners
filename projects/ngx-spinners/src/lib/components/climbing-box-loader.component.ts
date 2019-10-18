@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-climbing-box-loader',
   templateUrl: './climbing-box-loader.component.html',
-  styleUrls: ['./climbing-box-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./climbing-box-loader.component.scss']
 })
 export class ClimbingBoxLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -48,7 +47,7 @@ export class ClimbingBoxLoaderComponent {
       'border': `0.25em solid ${this.color}`,
       'transform': 'translate(0, -1em) rotate(-45deg)',
       'animation-fill-mode': 'both',
-      'animation': 'loading 2.5s infinite cubic-bezier(.79, 0, .47, .97)'
+      'animation': 'loading-climbing-box 2.5s infinite cubic-bezier(.79, 0, .47, .97)'
     };
   }
 

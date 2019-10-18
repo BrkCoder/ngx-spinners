@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-skew-loader',
   templateUrl: './skew-loader.component.html',
-  styleUrls: ['./skew-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./skew-loader.component.scss']
 })
 export class SkewLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -22,7 +21,7 @@ export class SkewLoaderComponent {
       'border-left': `${`${this.size}${this.sizeUnit}`} solid transparent`,
       'border-right': `${`${this.size}${this.sizeUnit}`} solid transparent`,
       'border-bottom': `${`${this.size}${this.sizeUnit}`} solid ${this.color}`,
-      'animation': 'loading 3s 0s infinite cubic-bezier(.09,.57,.49,.9)',
+      'animation': 'loading-skew 3s 0s infinite cubic-bezier(.09,.57,.49,.9)',
       'animation-fill-mode': 'both'
     };
   }

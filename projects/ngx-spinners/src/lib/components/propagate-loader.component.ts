@@ -1,11 +1,10 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 
 @Component({
   selector: 'ngx-propagate-loader',
   templateUrl: './propagate-loader.component.html',
-  styleUrls: ['./propagate-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./propagate-loader.component.scss']
 })
 export class PropagateLoaderComponent {
   @Input() color = 'rgb(54, 215, 183)';
@@ -29,7 +28,7 @@ export class PropagateLoaderComponent {
       'height': `${`${this.size}${this.sizeUnit}`}`,
       'background': `${this.color}`,
       'border-radius': '50%',
-      'animation': `${'loading-' + index} 1.5s  infinite`,
+      'animation': `${'loading-propagate-' + index} 1.5s  infinite`,
       'animation-fill-mode': 'forwards'
     };
   }

@@ -1,12 +1,11 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Dictionary} from '../dictionary';
 import {calculateRgba} from '../helpers/helpers';
 
 @Component({
   selector: 'ngx-bar-loader',
   templateUrl: './bar-loader.component.html',
-  styleUrls: ['./bar-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./bar-loader.component.scss']
 })
 export class BarLoaderComponent {
   @Input() color = '#36d7b7';
