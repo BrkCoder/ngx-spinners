@@ -6,12 +6,15 @@ Please note, that this project adhere to [Semantic Versioning](http://semver.org
 ### Added
 - Upgrade the entire library from angular 7.1 to angular 8.1
 
-## [1.1.0] - 2019-07-8
+## [1.1.0] - 2019-10-18
 
 ### Added
 - Upgrade the entire library from angular 8.1 to angular 8.2
 - Upgrade all dependencies & dev dependencies to latest versions  
 - Remove ViewEncapsulation.ShadowDom attribute and replace it with ViewEncapsulation.Emulated
+
+## [1.1.1] - 2019-10-18
+- Fixing missing Readme.md && CHANGELOG.md files in published package
 
 ## Future:
 - Add support for IE11
